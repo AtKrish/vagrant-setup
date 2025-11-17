@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
   # Bridged network - matches your WiFi adapter
   config.vm.network "public_network", bridge: "Intel(R) Wi-Fi 6 AX201 160MHz"
 
-  # Synced folder
+  # Synced folders
   config.vm.synced_folder "./scripts", "/home/vagrant/scripts", type: "rsync"
 
   # VirtualBox provider settings
